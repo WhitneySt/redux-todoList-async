@@ -1,1 +1,1 @@
-export const URL_API = "http://localhost:3001/todo"
+export const URL_API = "http://localhost:3001/tod"

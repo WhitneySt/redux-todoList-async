@@ -4,13 +4,15 @@ import { URL_API } from "../config";
 //1. Obtener todas las tareas
 
 export const getTask = async () => {
-  try {
-    const { data } = await axios.get(URL_API);
+  const { data } = await axios.get(URL_API);
     return data;
-  } catch (error) {
-    console.error(error);
-    return error;
-  }
+  // try {
+  //   const { data } = await axios.get(URL_API);
+  //   return data;
+  // } catch (error) {
+  //   console.error(error);
+  //   throw new Error(error);
+  // }
 };
 
 //2. Crear una nueva tarea
